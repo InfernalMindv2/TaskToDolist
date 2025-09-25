@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card" id="app">
+      <div class="lang-switch">
+        <button id="lang-en">English</button>
+        <button id="lang-ar">العربية</button>
+      </div>
+
+      <h1 id="title">Sign In</h1>
+
+      <form id="login-form" class="form" novalidate>
+        <label for="email" id="label-email">Email</label>
+        <input type="email" id="email" placeholder="email@example.com" />
+
+        <label for="password" id="label-password">Password</label>
+        <input type="password" id="password" placeholder="Password" />
+
+        <div id="msg" class="message"></div>
+
+        <button type="submit" id="btn-submit">Sign In</button>
+      </form>
+
+      <p id="alt">
+        Don't have an account?
+        <a href="register.html" id="register-link">Register</a>
+      </p>
+    </main>
+    <script src="lang.js"></script>
+    <script src="auth.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
